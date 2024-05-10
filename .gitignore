@@ -27,6 +27,5 @@ replay_pid*
 out
 
 #Obsidian
-.obsidian
-.obsidian/*.md
-.obsidian/*.json
+note/.obsidian
+note/.obsidian/*
