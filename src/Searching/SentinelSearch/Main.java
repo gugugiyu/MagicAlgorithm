@@ -1,7 +1,6 @@
 package src.Searching.SentinelSearch;
 
 import src.Searching.Displayer;
-import src.Searching.LinearSearch.LinearSearch;
 import src.Utils.ArrayGenerator;
 
 import java.util.ArrayList;

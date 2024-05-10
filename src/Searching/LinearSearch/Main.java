@@ -2,10 +2,8 @@ package src.Searching.LinearSearch;
 
 import src.Searching.Displayer;
 import src.Utils.ArrayGenerator;
-import src.Utils.Print;
 
 import java.util.ArrayList;
-import java.util.Random;
 
 public class Main{
     public static void main(String[] args){

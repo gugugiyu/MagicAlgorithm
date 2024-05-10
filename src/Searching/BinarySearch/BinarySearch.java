@@ -3,7 +3,6 @@ package src.Searching.BinarySearch;
 import src.Searching.Searchable;
 
 import java.util.ArrayList;
-import java.util.Collections;
 
 public class BinarySearch implements Searchable {
 
