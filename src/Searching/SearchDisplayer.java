@@ -8,7 +8,7 @@ import java.util.Random;
 /**
  * Single class to handle display of generic guiding flow
  */
-public class Displayer {
+public class SearchDisplayer {
     public void ArraySearchingFlow(Searchable searchable, ArrayList<Integer> list){
         Random random = new Random();
         Print<Integer> printer = new Print<>();

@@ -1,19 +1,19 @@
-package src.Searching.LinearSearch;
+package src.Sorting.InsertionSort;
 
-import src.Searching.SearchDisplayer;
+import src.Sorting.SortDisplayer;
 import src.Utils.ArrayGenerator;
 
 import java.util.ArrayList;
 
-public class Main{
+public class Main {
     public static void main(String[] args){
         ArrayGenerator arrayGenerator = new ArrayGenerator();
-        SearchDisplayer searchDisplayer = new SearchDisplayer();
-        LinearSearch searchInstance = new LinearSearch();
+        InsertionSort insertionSort = new InsertionSort();
+        SortDisplayer sortDisplayer = new SortDisplayer();
 
         //Generate a new list
         ArrayList<Integer> list = arrayGenerator.randomIntArrayGenerator(12, 50);
 
-        searchDisplayer.ArraySearchingFlow(searchInstance, list);
+        sortDisplayer.arraySortingFlow(insertionSort, list);
     }
 }
