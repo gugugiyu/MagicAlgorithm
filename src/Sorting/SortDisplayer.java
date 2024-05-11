@@ -8,10 +8,9 @@ import java.util.Random;
 public class SortDisplayer {
     public void arraySortingFlow(Sortable sortable ,ArrayList<Integer> list){
         long tempTimer = 0; //Temp variable to track execution
-        long ascExecutionTime = 0;
-        long desExecutionTime = 0;
+        long ascExecutionTime;
+        long desExecutionTime;
 
-        Random random = new Random();
         Print<Integer> printer = new Print<>();
 
         //Print currentArray
