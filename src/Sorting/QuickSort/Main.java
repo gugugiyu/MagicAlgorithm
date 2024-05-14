@@ -1,4 +1,4 @@
-package src.Sorting.BubbleSort;
+package src.Sorting.QuickSort;
 
 import src.Sorting.SortDisplayer;
 import src.Utils.ArrayGenerator;
@@ -8,12 +8,12 @@ import java.util.ArrayList;
 public class Main {
     public static void main(String[] args){
         ArrayGenerator arrayGenerator = new ArrayGenerator();
-        BubbleSort bubbleSort = new BubbleSort();
+        QuickSort quickSort = new QuickSort();
         SortDisplayer sortDisplayer = new SortDisplayer();
 
         //Generate a new list
-        ArrayList<Double> list = arrayGenerator.randomFloatArrayGenerator(500, 100, 2);
+        ArrayList<Integer> list = arrayGenerator.randomIntArrayGenerator(12 ,50);
 
-        sortDisplayer.arraySortingFlow(bubbleSort, list);
+        sortDisplayer.arraySortingFlow(quickSort, list);
     }
 }

@@ -2,7 +2,7 @@ package src.Utils;
 
 import java.util.ArrayList;
 
-public class Print<T> {
+public class Print<T extends Comparable<T>> {
     public void print(ArrayList<T> list){
         System.out.print("[");
 

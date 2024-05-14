@@ -7,7 +7,8 @@ import java.util.ArrayList;
 
 public class SelectionSort extends Sorting implements Sortable {
     @Override
-    public void sort(ArrayList<Integer> array, boolean isAsc) {
+    public <T extends Comparable<T>>
+    void sort(ArrayList<T> array, boolean isAsc) {
         int arrayLength = array.size();
 
         //Here, variable i will be used to keep track of the first position (which could be in ascending or descending order)

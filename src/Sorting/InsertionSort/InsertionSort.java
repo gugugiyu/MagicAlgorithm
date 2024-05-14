@@ -7,12 +7,13 @@ import java.util.ArrayList;
 
 public class InsertionSort extends Sorting implements Sortable {
     @Override
-    public void sort(ArrayList<Integer> array, boolean isAsc) {
+    public <T extends Comparable<T>>
+    void sort(ArrayList<T> array, boolean isAsc) {
         // We start from the second element, as the first one is assumed to be already sorted
         int arrayLength = array.size();
 
         for (int i = 1; i < arrayLength; i++){
-            int value = array.get(i);
+            T value = array.get(i);
 
             //The a copy of the current iterator so we can iterate backward and check those previous elements
             int j = i - 1;

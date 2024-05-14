@@ -21,18 +21,23 @@ public class ArrayGenerator {
     }
 
 
-    public ArrayList<Float> randomFloatArrayGenerator(int nElem){
-        ArrayList<Float> returnList = new ArrayList<>();
+    public ArrayList<Double> randomFloatArrayGenerator(int nElem, int max, double roundPercision){
+        ArrayList<Double> returnList = new ArrayList<>();
         Random random = new Random();
 
+        //Get the rounding unit
+        double roundingUnit = Math.pow(10, roundPercision);
+
         //Populate the list
-        for (int i = 0; i < nElem; i++)
-            returnList.add(random.nextFloat());
+        for (int i = 0; i < nElem; i++){
+            double roundOff = Math.round((random.nextFloat() * max) * roundingUnit) / roundingUnit;
+            returnList.add(roundOff);
+        }
 
         return returnList;
     }
 
-    public ArrayList<String> randomStringArrayGenerator(int nElem){
+    public ArrayList<String> randomStringArrayGenerator(int nElem, int length){
         String stringList = "abcdefghijklmnopqrstuvwxyz123456789";
         int stringListLen = stringList.length();
 
@@ -42,7 +47,7 @@ public class ArrayGenerator {
         //Populate the list
         for (int i = 0; i < nElem; i++){
             //Construct a random string
-            int randomStringLength = random.nextInt(5, 15);
+            int randomStringLength = random.nextInt(1, length);
             StringBuilder newString = new StringBuilder();
 
             for (int j = 0; j < randomStringLength; j++){

@@ -7,7 +7,7 @@ import java.util.ArrayList;
 
 public class BubbleSort extends Sorting implements Sortable {
     @Override
-    public void sort(ArrayList<Integer> array, boolean isAsc) {
+    public  <T extends Comparable<T>> void sort(ArrayList<T> array, boolean isAsc) {
         int arrayLength = array.size();
 
         // The inner for loop only loops to len - 1 to prevent overflow as we compare the element and its forward neighbor
