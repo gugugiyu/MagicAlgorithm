@@ -1,6 +1,5 @@
 package src.Sorting.TimSort;
 
-import src.Sorting.MergeSort.MergeSort;
 import src.Sorting.SortDisplayer;
 import src.Utils.ArrayGenerator;
 

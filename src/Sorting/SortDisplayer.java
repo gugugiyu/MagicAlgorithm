@@ -7,7 +7,7 @@ import java.util.ArrayList;
 public class SortDisplayer {
     public <T extends Comparable<T>>
     void arraySortingFlow(Sortable sortable , ArrayList<T> list){
-        long tempTimer = 0; //Temp variable to track execution
+        long tempTimer; //Temp variable to track execution
         long ascExecutionTime;
         long desExecutionTime;
 
